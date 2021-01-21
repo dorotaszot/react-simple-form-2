@@ -34,7 +34,8 @@ function App() {
   return (
     <div className="App">
       <form className="form-wrapper" onSubmit={handleSubmit}>
-        {submitted && valid ? <div>Thank you for registering!</div> : null}
+        <h2>Subscribe with us!</h2>
+        {submitted && valid ? <div className='success-message'>Thank you for registering!</div> : null}
        
         <input onChange={handleFirstNameInputOnchange} value={values.firstName} type="text" placeholder='Enter First Name'></input>
         {submitted && !values.firstName ? <span>Please enter your first name</span> : null}

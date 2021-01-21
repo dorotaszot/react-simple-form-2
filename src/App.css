@@ -1,5 +1,7 @@
-.App {
+* {
   box-sizing: border-box;
+}
+.App {
   margin: 0;
   padding: 0;
   display: flex;
@@ -14,9 +16,54 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 30%;
+  width: 320px;
   margin: 0 auto;
   background-color: #333;
   color: #fff;
   box-shadow: rgb(202, 201, 201) 3px 3px 3px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.success-message {
+  background-color: aqua;
+  color: #000;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+  /* border: 2px solid #333; */
+}
+
+input:focus {
+  outline: 1px solid aqua;
+  /* border: 2px solid aqua; */
+}
+
+span {
+  padding-bottom: 15px;
+}
+
+button {
+  padding: 10px;
+  width: 100%;
+  color: #fff;
+  background-color: aqua;
+  border-radius: 5px;
+  font-size: 18px;
+  border: none;
+}
+
+button:hover {
+  background-color: rgb(7, 219, 219);
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
 }
